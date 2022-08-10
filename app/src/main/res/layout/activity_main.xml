@@ -34,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:cursorVisible="true"
+                android:ems="15"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/textview_border"
                 android:hint="  input here" />
@@ -56,7 +57,6 @@
                 <TextView
                     android:id="@+id/text_hash"
                     android:layout_height="47dp"
-                    android:testSize="46sp"
                     android:gravity="center"
                     android:layout_width="70dp"
                     android:text="HASH: "
@@ -67,6 +67,8 @@
                 <TextView
                     android:id="@+id/hashvalue"
                     android:layout_height="46dp"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:background="@drawable/textview_border"
                     android:layout_weight="1" />
@@ -90,7 +92,6 @@
                 <TextView
                     android:id="@+id/text_md5"
                     android:layout_height="47dp"
-                    android:testSize="46sp"
                     android:gravity="center"
                     android:layout_width="70dp"
                     android:text="MD5: "
@@ -124,7 +125,6 @@
                 <TextView
                     android:id="@+id/text_base64"
                     android:layout_height="47dp"
-                    android:testSize="46sp"
                     android:gravity="center"
                     android:layout_width="70dp"
                     android:text="BASE64: "
@@ -158,7 +158,6 @@
                 <TextView
                     android:id="@+id/text_aes"
                     android:layout_height="47dp"
-                    android:testSize="46sp"
                     android:gravity="center"
                     android:layout_width="70dp"
                     android:text="AES: "
@@ -188,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="transformCode"
+            android:onClick="TransformCode"
             android:layout_gravity="center"
             android:text="转换"
             android:textAlignment="center"
